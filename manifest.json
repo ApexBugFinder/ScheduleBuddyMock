@@ -1,0 +1,58 @@
+{
+"manifest_version": 2,
+"name": "Schedule Buddy",
+"version": "2",
+"icons": {
+    "16": "images/developers-logo.png",
+    "48": "images/developers-logo.png",
+    "128": "images/developers-logo.png"
+},
+"permissions": [
+    "background",
+    "identity",
+    "notifications",
+    "storage",
+    "alarms",
+    "https://www.googleapis.com/*",
+    "https://*.googleusercontent.com/*",
+    "https://apis.google.com/js/*"
+],
+"content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'",
+"background": {
+    "scripts": [
+        "background.js",
+        "options.js",
+        "optionsP2.js"
+    ],
+    "persistent": false
+},
+
+
+"options_ui": {
+    "page": "options.html",
+    
+    "open_in_tab": false
+},
+
+
+"browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+      },
+    "default_title": "Click to Sign in with Google"
+},
+
+"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAucJchWajNSDFqReh3qMnLvv9lMv41KYbBw3LlcxONKq8YeNL5r8qoffyxfGwXDqMw/UGljFlN3Nhkh2DMDo9A1EXFmGUnWdceWvH2mkDgOM4gdhPh0guAPKAkjloreGlaadOyMnbUojmOQMyQvQtakRuc455+s6tso7qLXAHHByiYL7Neei+15/oKKzi9d3qtXZBabxEe1h23oCi6Qx/8+5MV3W5+n+Y/Y40e79xvboNONXeH41Q83E3BvR6x29VnRCDto7Q0+480J77tqkkLJ4RIVxAm61NELxPsmnG2qAw5GdVxDWkut0JkOESXlvLs4MIxLMIbtHvNe6yEZO6SQIDAQAB",
+"oauth2": {
+    "client_id": "963870381584-r0s95shjcv94r0dk41cbdc84rn5rk8pg.apps.googleusercontent.com",
+    "scopes": [
+        "profile",
+        "calendar",
+        "https://www.googleapis.com/auth/calendar"
+    ]
+}
+}

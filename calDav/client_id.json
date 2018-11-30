@@ -1,0 +1,9 @@
+{
+    "installed": {
+        "client_id": "963870381584-r0s95shjcv94r0dk41cbdc84rn5rk8pg.apps.googleusercontent.com",
+        "project_id": "schedule-buddy-223710",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://www.googleapis.com/oauth2/v3/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs"
+    }
+}
